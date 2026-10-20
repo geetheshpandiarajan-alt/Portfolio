@@ -1,0 +1,6 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-uL96Jjaqt8j2eWe7r6q7SxruhBTibsqrp4QVGoG+Grg=' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'sha256-sH05jU1JsDg5yna1eWQRlNY1RoQNgcS0kNlUTcP9tdA='; base-uri 'none'; form-action 'none'; frame-ancestors 'none'

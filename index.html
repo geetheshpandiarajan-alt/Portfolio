@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'sha256-uL96Jjaqt8j2eWe7r6q7SxruhBTibsqrp4QVGoG+Grg=' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'sha256-sH05jU1JsDg5yna1eWQRlNY1RoQNgcS0kNlUTcP9tdA='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Geethesh Pandiarajan – Product Manager</title>
+<meta name="description" content="Product manager with 7+ years turning complex data and AI into products people actually use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --ink:#12263A; --muted:#52667A; --line:#D9DFE6;
+  --accent:#B8730A; --btn-ink:#FFFFFF;
+  --font:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#12263A; --surface:#183049; --ink:#F4F6F8; --muted:#9FB3C8; --line:#2A4560; --accent:#F2B84B; --btn-ink:#12263A; color-scheme:dark}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+
+/* banner */
+.banner{background:#12263A}
+.banner img{display:block;width:100%;max-width:1600px;margin:0 auto;height:auto;object-fit:cover;object-position:left center}
+@media (max-width:640px){.banner img{height:160px}}
+
+/* profile row */
+.profile{display:flex;gap:28px;align-items:flex-start;padding-bottom:28px}
+.avatar{margin-top:-64px;position:relative;flex:none;width:136px;height:136px;border-radius:50%;border:5px solid var(--bg);background:var(--surface);overflow:hidden;display:flex;align-items:center;justify-content:center;font-weight:500;font-size:40px;color:var(--accent)}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.intro{padding:22px 0 6px}
+.intro p{margin:0 0 12px;font-weight:300;font-size:clamp(17px,2vw,21px);line-height:1.5;max-width:34em}
+.btn{display:inline-block;background:var(--accent);color:var(--btn-ink);text-decoration:none;font-weight:500;padding:10px 22px;border-radius:999px;font-size:15px}
+.btn:hover{opacity:.9}
+.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--accent);opacity:1}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.intro p.loc{font-size:15px;font-weight:400;color:var(--muted);margin:0 0 16px}
+.intro p.loc{display:flex;align-items:center;gap:6px}
+.loc svg{width:16px;height:16px;flex:none;color:var(--accent)}
+
+/* tabs */
+.tabs{display:flex;gap:6px;overflow-x:auto;border-bottom:1px solid var(--line);scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:14px 16px;font:inherit;font-size:16px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.panel{padding:48px 0 72px}
+.panel[hidden]{display:none}
+h2{font-size:15px;font-weight:500;color:var(--muted);margin:0 0 30px}
+h3{margin:0}
+
+.lead{font-size:clamp(20px,2.6vw,28px);line-height:1.45;font-weight:300;margin:0;max-width:30em}
+
+.job{display:grid;grid-template-columns:230px 1fr;gap:12px 48px;padding:30px 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:0}
+.job:last-of-type{border-bottom:0;padding-bottom:0}
+.job h3{font-size:22px;font-weight:500}
+.meta{color:var(--muted);font-size:15px;margin:4px 0 0}
+.job p.body{margin:0;font-size:17px;max-width:62ch}
+
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{font-size:20px;font-weight:500;margin-bottom:4px}
+.card .meta{margin:0 0 14px}
+.card p{margin:0 0 16px;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tags span{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 12px}
+.card a{color:var(--accent);font-weight:500;font-size:15px;text-decoration:none}
+.card a:hover{text-decoration:underline}
+
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-bottom:56px}
+.skills h3,.two h3{font-size:16px;font-weight:500;color:var(--accent);margin-bottom:12px}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{padding:6px 0;border-top:1px solid var(--line);font-size:15.5px}
+ul.list li span{display:block;color:var(--muted);font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+
+.contact p{font-size:clamp(22px,3vw,32px);font-weight:300;margin:0 0 26px;max-width:22em;line-height:1.35}
+footer{padding:26px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+
+@media (max-width:820px){
+  .job{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr 1fr}
+  .two,.cards{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .wrap{padding:0 20px}
+  .profile{flex-direction:column;align-items:flex-start;gap:14px}
+  .avatar{width:112px;height:112px;margin-top:-52px}
+  .intro{padding-top:0}
+  .skills{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="banner"><img src="banner.png" alt="Geethesh Pandiarajan, Product Manager. Solving business problems with thinking and technology."></div>
+
+<div class="wrap">
+
+  <div class="profile">
+    <div class="avatar"><span aria-hidden="true">GP</span><img id="photo" src="profile.jpg" alt="Geethesh Pandiarajan"></div>
+    <div class="intro">
+      <p>Product manager with 7+ years turning complex data and AI into products people actually use, across various industries, from idea to adoption.</p>
+      <p class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>United States</p>
+      <a class="btn" href="#" data-u="geetheshpandiarajan774" data-d="gmail.com">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Portfolio sections">
+    <button class="tab" role="tab" id="t-experience" aria-controls="experience" aria-selected="true">Experience</button>
+    <button class="tab" role="tab" id="t-skills" aria-controls="skills" aria-selected="false">Skills</button>
+    <button class="tab" role="tab" id="t-education" aria-controls="education" aria-selected="false">Education and certifications</button>
+    <button class="tab" role="tab" id="t-projects" aria-controls="projects" aria-selected="false">Academic projects</button>
+    <button class="tab" role="tab" id="t-contact" aria-controls="contact" aria-selected="false">Contact</button>
+  </div>
+
+  <section class="panel" id="experience" role="tabpanel" aria-labelledby="t-experience">
+    <div class="job">
+      <div><h3>Affirm</h3><p class="meta">Product Manager</p><p class="meta">Jan 2024 – Present</p></div>
+      <p class="body">Loan underwriting was slow and manual, so Affirm set out to automate it with AI. Discovery with business teams shaped an MVP around the highest-value use cases. When credit analysts doubted the model, regular feedback sessions put their input into every sprint across four squads. Adoption hit 70% in six months, and approval time dropped 50%.</p>
+    </div>
+    <div class="job">
+      <div><h3>Saint Louis University</h3><p class="meta">Team Lead</p><p class="meta">May 2023 – Dec 2023</p></div>
+      <p class="body">The team set out to build a mobile application for hypertension management, starting with the people it was meant to help. Market research, competitive analysis, and customer interviews showed where the real opportunities were and shaped the product’s direction. Team lead on the project, working under Professor Devita.</p>
+    </div>
+    <div class="job">
+      <div><h3>LTI Mindtree</h3><p class="meta">Product Manager</p><p class="meta">Jul 2021 – Jan 2023</p></div>
+      <p class="body">Five enterprise applications needed clearer direction and new business in a crowded market. Client workshops, market research, and competitor analysis shaped a roadmap for each one, while Scrum and Kanban kept developers, QA, design, and DevOps moving together. The work brought in 35 new projects, 95% on-time delivery, and 15% revenue growth.</p>
+    </div>
+    <div class="job">
+      <div><h3>Larsen &amp; Toubro</h3><p class="meta">Product Manager</p><p class="meta">Jul 2018 – Jul 2021</p></div>
+      <p class="body">Construction projects were still run the traditional way, so the team set out to digitise them. Across 20+ projects, GIS solutions and AI brought construction and infrastructure work online. Kano and MoSCoW prioritization shaped the roadmap, Azure DevOps pipelines kept engineering aligned, and SQL and Python dashboards gave stakeholders clear insights and cut costs by 10%.</p>
+    </div>
+  </section>
+
+  
+
+  <section class="panel" id="skills" role="tabpanel" aria-labelledby="t-skills" hidden>
+    <div class="skills">
+      <div><h3>Product strategy</h3><ul class="list"><li>Roadmapping and prioritization</li><li>MVP definition</li><li>Requirement gathering</li><li>Go-to-market and competitive analysis</li></ul></div>
+      <div><h3>Delivery</h3><ul class="list"><li>Agile, Scrum and Kanban</li><li>Backlog and release management</li><li>Cross-functional leadership</li><li>Executive communication</li></ul></div>
+      <div><h3>Data and AI</h3><ul class="list"><li>SQL and Python</li><li>Product analytics</li><li>A/B testing</li><li>AI and data products</li></ul></div>
+      <div><h3>Tools</h3><ul class="list"><li>Jira, Confluence, Azure DevOps</li><li>Figma, Miro</li><li>Tableau, Power BI, QuickSight</li><li>AWS, Azure</li></ul></div>
+    </div>
+  </section>
+
+  <section class="panel" id="education" role="tabpanel" aria-labelledby="t-education" hidden>
+    <div class="two">
+      <div><h3>Certifications</h3><ul class="list"><li>Project Management Professional (PMP)</li><li>Certified ScrumMaster (CSM)</li><li>Certified Scrum Product Owner (CSPO)</li></ul></div>
+      <div><h3>Education</h3><ul class="list"><li>Master’s in Information Systems<span>Saint Louis University</span></li><li>Bachelor’s in Geoinformatics<span>Anna University</span></li></ul></div>
+    </div>
+  </section>
+
+  <section class="panel" id="projects" role="tabpanel" aria-labelledby="t-projects" hidden>
+    <h2>Projects from my studies</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Open-source AI personal assistant</h3>
+        <p class="meta">Oct 2023 – May 2024</p>
+        <p>Built an open-source AI personal assistant for the desktop, using Python for the application and SQL for storing and managing its data.</p>
+        <div class="tags"><span>Python</span><span>SQL</span><span>AI</span><span>Open source</span></div>
+      </article>
+      <article class="card">
+        <h3>Real-time accident management app</h3>
+        <p class="meta">Dec 2017 – May 2018</p>
+        <p>Designed a web and mobile application for managing accidents in real time, combining sensor data with location analytics to respond as incidents happen.</p>
+        <div class="tags"><span>Web and mobile</span><span>Sensors</span><span>Location analytics</span></div>
+      </article>
+      <article class="card">
+        <h3>Soil and groundwater pollution analysis, Chennai</h3>
+        <p class="meta">Jun 2017 – Dec 2017</p>
+        <p>Analysed soil and groundwater pollution across the Chennai region, bringing together satellite data and GIS mapping with Python and SQL.</p>
+        <div class="tags"><span>Python</span><span>SQL</span><span>GIS</span><span>Satellite data</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel contact" id="contact" role="tabpanel" aria-labelledby="t-contact" hidden>
+    <p>Reach me by email or on LinkedIn.</p>
+    <div class="actions">
+      <a class="btn" href="#" data-u="geetheshpandiarajan774" data-d="gmail.com">Email</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/geethesh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>© Geethesh Pandiarajan</footer>
+</div>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function show(id,push){
+    tabs.forEach(function(t){
+      var on=t.getAttribute('aria-controls')===id;
+      t.setAttribute('aria-selected',on);
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(push) history.replaceState(null,'','#'+id);
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.getAttribute('aria-controls'),true)});
+    t.addEventListener('keydown',function(e){
+      var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null;
+      if(n===null)return;
+      n=(n+tabs.length)%tabs.length;tabs[n].focus();tabs[n].click();
+    });
+  });
+  [].forEach.call(document.querySelectorAll('[data-u]'),function(a){a.href='mailto:'+a.getAttribute('data-u')+'@'+a.getAttribute('data-d')});
+  var ph=document.getElementById('photo');
+  if(ph){ph.addEventListener('error',function(){ph.remove()});if(ph.complete&&ph.naturalWidth===0)ph.remove()}
+  var h=location.hash.slice(1);
+  show(document.getElementById(h)&&document.getElementById(h).getAttribute('role')==='tabpanel'?h:'experience',false);
+})();
+</script>
+</body>
+</html>
