@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'sha256-uL96Jjaqt8j2eWe7r6q7SxruhBTibsqrp4QVGoG+Grg=' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'sha256-sH05jU1JsDg5yna1eWQRlNY1RoQNgcS0kNlUTcP9tdA='; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'sha256-sH05jU1JsDg5yna1eWQRlNY1RoQNgcS0kNlUTcP9tdA='; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -98,6 +98,14 @@ footer{padding:26px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
   .intro{padding-top:0}
   .skills{grid-template-columns:1fr}
 }
+  .actions{align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center}
+.actions .btn.ghost{width:45px;height:45px;padding:0;border-radius:50%}
+.btn.ghost svg{display:block}
+.intro p.loc{font-size:16px}
+.loc svg{width:18px;height:18px}
+.avatar{margin-left:-5px}
+@media (max-width:560px){.profile{margin-top:-30px}}
 </style>
 </head>
 <body>
